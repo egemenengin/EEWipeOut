@@ -1,0 +1,152 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch EEWipeOut (Debug)",
+			"request": "launch",
+			"program": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+			"preLaunchTask": "EEWipeOut Win64 Debug Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOut (DebugGame)",
+			"request": "launch",
+			"program": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+			"preLaunchTask": "EEWipeOut Win64 DebugGame Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOut (Development)",
+			"request": "launch",
+			"program": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Binaries\\Win64\\UnrealGame.exe",
+			"preLaunchTask": "EEWipeOut Win64 Development Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOut (Test)",
+			"request": "launch",
+			"program": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+			"preLaunchTask": "EEWipeOut Win64 Test Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOut (Shipping)",
+			"request": "launch",
+			"program": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+			"preLaunchTask": "EEWipeOut Win64 Shipping Build",
+			"args": [
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOutEditor (Debug)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+			"preLaunchTask": "EEWipeOutEditor Win64 Debug Build",
+			"args": [
+				"C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\EEWipeOut.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOutEditor (DebugGame)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+			"preLaunchTask": "EEWipeOutEditor Win64 DebugGame Build",
+			"args": [
+				"C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\EEWipeOut.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Launch EEWipeOutEditor (Development)",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+			"preLaunchTask": "EEWipeOutEditor Win64 Development Build",
+			"args": [
+				"C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\EEWipeOut.uproject"
+			],
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0",
+			"stopAtEntry": false,
+			"console": "externalTerminal",
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+			"sourceFileMap": {
+				"D:\build\++UE5\Sync": "C:\\Program Files\\Epic Games\\UE_5.0"
+			}
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Binaries\\DotNET\\UnrealBuildTool\\UnrealBuildTool",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\EEWipeOut.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "externalTerminal",
+			"stopAtEntry": false,
+			"cwd": "C:\\Program Files\\Epic Games\\UE_5.0"
+		}
+	]
+}

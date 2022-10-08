@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "EEWipeOutEditor Editor Win64 Development (EEWipeOut)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "Win32",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_Default.json",
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
