@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f49a2d15-72e0-41d0-861f-d72261c78d43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP/WBP_Gameplay.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP/WBP_MainMenu.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP/WBP_PausePanel.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/LearningKit_Games/Maps/DemoMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/LearningKit_Games/Maps/DemoMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/LearningKit_Games/Maps/MainMenu.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/LearningKit_Games/Maps/MainMenu.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/GameHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/GameHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/GameHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/GameHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/MainMenuHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/MainMenuHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/MainMenuHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/MainMenuHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/PauseHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/PauseHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/PauseHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/PauseHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/EEWipeOut/PlatformMovement.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/EEWipeOut/PlatformMovement.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2GAap4JjWL8dHwWDCev4hTKXuvy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f49a2d15-72e0-41d0-861f-d72261c78d43" name="Changes" comment="" />
+      <created>1665834024497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665834024497</updated>
+      <workItem from="1665834029081" duration="8000" />
+    </task>
+    <servers />
+  </component>
+</project>

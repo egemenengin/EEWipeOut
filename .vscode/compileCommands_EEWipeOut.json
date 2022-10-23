@@ -25,6 +25,16 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
 	},
 	{
+		"file": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Source\\EEWipeOut\\GameManager.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut\\EEWipeOut.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Source\\EEWipeOut\\GameManager.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut\\EEWipeOut.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
 		"file": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Source\\EEWipeOut\\GateControl.cpp",
 		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut\\EEWipeOut.211.rsp",
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
@@ -61,6 +71,16 @@
 	},
 	{
 		"file": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Source\\EEWipeOut\\PlatformMovement.h",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut\\EEWipeOut.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Source\\EEWipeOut\\SettingsHUD.cpp",
+		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut\\EEWipeOut.211.rsp",
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
+	},
+	{
+		"file": "C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\Source\\EEWipeOut\\SettingsHUD.h",
 		"command": "\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.33.31629\\bin\\HostX64\\x64\\cl.exe\" @C:\\Users\\egeme\\Desktop\\projects\\UnrealEngine5Projects\\EEWipeOut\\.vscode\\compileCommands_EEWipeOut\\EEWipeOut.211.rsp",
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.0\\Engine\\Source"
 	}

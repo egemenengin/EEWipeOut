@@ -15,19 +15,19 @@ APlatformMovement::APlatformMovement()
 void APlatformMovement::BeginPlay()
 {
 	Super::BeginPlay();
-	Super::BeginPlay();
+
 	StartingPosition = GetActorLocation();
-	Description = FString::Printf(TEXT("Name: %s\nCanMove: %d | Move Velocity: (%f,%f,%f)\nCanRotate: %d | RotateVelocity: (%f,%f,%f)"), 
-								  *GetName(), CanMove, MoveVelocity.X, MoveVelocity.Y, MoveVelocity.Z,
-								  CanRotate, RotatingVelocity.Roll, RotatingVelocity.Pitch, RotatingVelocity.Yaw);
-	UE_LOG(LogTemp, Display, TEXT("%s"), *Description);
+	//Description = FString::Printf(TEXT("Name: %s\nCanMove: %d | Move Velocity: (%f,%f,%f)\nCanRotate: %d | RotateVelocity: (%f,%f,%f)"), 
+	//							  *GetName(), CanMove, MoveVelocity.X, MoveVelocity.Y, MoveVelocity.Z,
+	//							  CanRotate, RotatingVelocity.Roll, RotatingVelocity.Pitch, RotatingVelocity.Yaw);
+	//UE_LOG(LogTemp, Display, TEXT("%s"), *Description);
 }
 
 // Called every frame
 void APlatformMovement::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	Super::Tick(DeltaTime);
+
 	if(CanMove)
 	{
 		MovePlatform(DeltaTime);

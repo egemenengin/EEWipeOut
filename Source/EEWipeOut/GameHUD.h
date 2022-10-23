@@ -13,17 +13,14 @@ UCLASS()
 class EEWIPEOUT_API UGameHUD : public UUserWidget
 {
 	GENERATED_BODY()
-	
+protected:
+	virtual bool Initialize() override;
 public:
 
-
-
-
-
 	UPROPERTY(EditAnyWhere, Category = "TIME")
-	float TotalTime = 500;
+	float TotalTime = 120;
 	UPROPERTY(EditAnyWhere, Category = "TIME")
-	float RemainingTime = 500;
+	float RemainingTime = 120;
 
 	UPROPERTY(EditAnyWhere, meta = (BindWidget))
 	class UProgressBar* RemainingBar;
@@ -33,8 +30,10 @@ public:
 	UPROPERTY(EditAnyWhere, meta = (BindWidget))
 	class UTextBlock* SecondsText;
 
-
-	void HandleTimer();
+	UFUNCTION()
+	float GetRemainingTime();
+	
+	void SetTime();
 
 };
 

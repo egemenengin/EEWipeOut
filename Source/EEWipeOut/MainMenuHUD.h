@@ -30,6 +30,9 @@ public:
 	UPROPERTY(EditAnyWhere, meta = (BindWidget))
 	class UButton* CloseInfoPanelButton;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	class APlayerController* PlayerControllerRef;
+
 	UFUNCTION()
 	void OnStartClicked();
 	UFUNCTION()

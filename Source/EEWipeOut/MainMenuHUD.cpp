@@ -3,11 +3,20 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "Runtime/UMG/Public/UMG.h"
+#include "Kismet/KismetSystemLibrary.h"
+
 
 bool UMainMenuHUD::Initialize()
 {
+
     const bool bSuccess = Super::Initialize();
     if(!bSuccess) return false;
+
+    PlayerControllerRef = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+    if(PlayerControllerRef)
+    {
+        PlayerControllerRef->SetShowMouseCursor(true);
+    }
 
     if(!ensure(StartButton != nullptr)) return false;
     if(!ensure(SettingsButton != nullptr)) return false;
@@ -28,27 +37,40 @@ bool UMainMenuHUD::Initialize()
 }
 void UMainMenuHUD::OnStartClicked()
 {
-    //UGameplayStatics::OpenLevel(GetWorld(), "Level2");
+   /* if(PlayerControllerRef)
+    {
+        PlayerControllerRef->SetShowMouseCursor(false);
+    }*/
+    UGameplayStatics::OpenLevel(GetWorld(), "DemoMap");
     //UGameplayStatics::OpenLevel(GetWorld(), TEXT("World'/Game/Maps/Level1.Level1'"), TRAVEL_Absolute); 
 }
 
 void UMainMenuHUD::OnSettingsClicked()
 {
-
+    if(PlayerControllerRef)
+    {
+        PlayerControllerRef->SetShowMouseCursor(false);
+    }
+    //UGameplayStatics::OpenLevel(GetWorld(), "");
 }
 
 void UMainMenuHUD::OnInfoClicked()
 {
-
+    InfoPanel->SetVisibility(ESlateVisibility::Visible);
+    InfoPanel->SetIsEnabled(true);
 }
 
 void UMainMenuHUD::OnQuitClicked()
 {
-
+    if(PlayerControllerRef)
+    {
+        UKismetSystemLibrary::QuitGame(this, PlayerControllerRef, EQuitPreference::Quit, false);
+    }
 }
 
 void UMainMenuHUD::OnCloseInfoClicked()
 {
-
+    InfoPanel->SetVisibility(ESlateVisibility::Hidden);
+    InfoPanel->SetIsEnabled(false);
 }
 

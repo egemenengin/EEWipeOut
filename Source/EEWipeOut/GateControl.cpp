@@ -31,7 +31,7 @@ void AGateControl::Tick(float DeltaTime)
 	{
 		
 		TimerStarted = true;
-		UE_LOG(LogTemp, Display, TEXT("TIMER STARTED %f"), TimeClosed);
+		//UE_LOG(LogTemp, Display, TEXT("TIMER STARTED %f"), TimeClosed);
 		GetWorld()->GetTimerManager().SetTimer(TimerHandle, this ,&AGateControl::GateBlockHandler, TimeClosed, false);
 		
 	}
@@ -42,18 +42,18 @@ void AGateControl::GateBlockHandler()
 		
 		if(IsOpen)
 		{	
-			UE_LOG(LogTemp, Display, TEXT("CLOSE"));
+			//UE_LOG(LogTemp, Display, TEXT("CLOSE"));
 			SetActorHiddenInGame(true);
 			SetActorEnableCollision(false);	
 			IsOpen = false;
 		}
 		else
 		{
-			UE_LOG(LogTemp, Display, TEXT("OPEN"));
+			//UE_LOG(LogTemp, Display, TEXT("OPEN"));
 			SetActorHiddenInGame(false);
 			SetActorEnableCollision(true);
 			IsOpen = true;
 		}
 		TimerStarted = false;
-		UE_LOG(LogTemp, Display, TEXT("TIMER FINISHED"));
+
 }
