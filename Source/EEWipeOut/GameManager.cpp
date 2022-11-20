@@ -24,13 +24,12 @@ AGameManager::AGameManager()
 void AGameManager::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	PlayerControllerRef = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+	check(PlayerControllerRef);
 	UWidgetBlueprintLibrary::SetInputMode_GameOnly(PlayerControllerRef);
+	
 	if(GameHUDClass && PauseHUDClass && WinHUDClass && LoseHUDClass)
 	{
-		PlayerControllerRef = UGameplayStatics::GetPlayerController(GetWorld(), 0);
-		check(PlayerControllerRef);
-
 		GameHUD = CreateWidget<UGameHUD>(PlayerControllerRef, GameHUDClass);
 		check(GameHUD);
 		GameHUD->AddToPlayerScreen();
@@ -39,14 +38,14 @@ void AGameManager::BeginPlay()
 		check(PauseHUD);
 		PauseHUD->AddToPlayerScreen();
 		PauseHUD->SetVisibility(ESlateVisibility::Hidden);
-    	PauseHUD ->SetIsEnabled(false);
+    	PauseHUD->SetIsEnabled(false);
 
 		WinHUD = CreateWidget<UWinHUD>(PlayerControllerRef, WinHUDClass);
 		check(WinHUD);
 
 		LoseHUD = CreateWidget<ULoseHUD>(PlayerControllerRef, LoseHUDClass);
 		check(LoseHUD);
-	},
+	}
 	WinDoor = FindComponentByClass<UChildActorComponent>(); 
 	WinCollider = WinDoor->GetChildActor()->FindComponentByClass<UBoxComponent>();
 	WinCollider->OnComponentBeginOverlap.AddDynamic(this, &AGameManager::Win);
@@ -56,7 +55,7 @@ void AGameManager::BeginPlay()
 	LoseCollider->OnComponentBeginOverlap.AddDynamic(this, &AGameManager::Fall);
 	UE_LOG(LogTemp, Display, TEXT("Win Collider: %s"), *(WinCollider->GetName()));
 	UE_LOG(LogTemp, Display, TEXT("Lose Collider: %s"), *(LoseCollider->GetName()));
-	UWidgetBlueprintLibrary::SetInputMode_GameOnly(PlayerControllerRef);
+	PlayerControllerRef->SetShowMouseCursor(false);
 }
 
 // Called every frame
@@ -65,7 +64,8 @@ void AGameManager::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	
-	if(PlayerControllerRef->WasInputKeyJustPressed(EKeys::P) && !PauseHUD->GetIsEnabled())
+	if( (PlayerControllerRef->WasInputKeyJustPressed(EKeys::P)) &&
+	    (!PauseHUD->GetIsEnabled()) && !GameFinished ) 
 	{
 
 		PauseHUD->SetIsOpen(true);
@@ -79,9 +79,9 @@ void AGameManager::Tick(float DeltaTime)
 		
 
 	
-	if(!TimerStarted && !PauseHUD->GetIsEnabled())
+	if( (!TimerStarted) && (!PauseHUD->GetIsEnabled()) && (!GameFinished) )
 	{	
-
+		
 		TimerStarted = true;
 		GetWorld()->GetTimerManager().SetTimer(TimerHandle, this ,&AGameManager::TimeManager, 1, false);
 		if(GetRemainingTime() <= 0)
@@ -114,19 +114,27 @@ float AGameManager::GetRemainingTime()
 
 void AGameManager::Win(UPrimitiveComponent* a,AActor* b, UPrimitiveComponent* c, int32 d,bool e, const FHitResult& f)
 {
-
+	if( !GameFinished )
+	{
+		PlayerControllerRef->SetShowMouseCursor(true);
 		UWidgetBlueprintLibrary::SetInputMode_UIOnlyEx(PlayerControllerRef, WinHUD, EMouseLockMode::LockOnCapture);
 		WinHUD->AddToPlayerScreen();
+		GameFinished = true;
 		TimerStarted = false;
-
+	}
+		
 }
 
 void AGameManager::Lose()
 {
-
-	UWidgetBlueprintLibrary::SetInputMode_UIOnlyEx(PlayerControllerRef, LoseHUD, EMouseLockMode::LockOnCapture);
-	LoseHUD->AddToPlayerScreen();
-	TimerStarted = false;
+	if( !GameFinished )
+	{
+		PlayerControllerRef->SetShowMouseCursor(true);
+		UWidgetBlueprintLibrary::SetInputMode_UIOnlyEx(PlayerControllerRef, LoseHUD, EMouseLockMode::LockOnCapture);
+		GameFinished = true;
+		TimerStarted = false;
+		LoseHUD->AddToPlayerScreen();
+	}
 
 }
 

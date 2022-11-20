@@ -61,7 +61,8 @@ private:
 
 	UPROPERTY(EditAnyWhere, Category = "Game Ending")
 	bool TimeIsUp;
-
+	UPROPERTY(EditAnyWhere, Category = "Game Ending")
+	bool GameFinished;
 	APlayerController* PlayerControllerRef;
 
 	UFUNCTION()

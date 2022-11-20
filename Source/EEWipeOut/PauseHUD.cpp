@@ -37,7 +37,7 @@ void UPauseHUD::OnMainMenuClicked()
 void UPauseHUD::OnContinueClicked()
 {
     this->SetVisibility(ESlateVisibility::Hidden);
-    this ->SetIsEnabled(false);
+    this->SetIsEnabled(false);
     UWidgetBlueprintLibrary::SetInputMode_GameOnly(PlayerControllerRef);
   
 }

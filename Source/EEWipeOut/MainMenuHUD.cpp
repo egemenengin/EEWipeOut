@@ -37,20 +37,17 @@ bool UMainMenuHUD::Initialize()
 }
 void UMainMenuHUD::OnStartClicked()
 {
-   /* if(PlayerControllerRef)
+   if(PlayerControllerRef)
     {
         PlayerControllerRef->SetShowMouseCursor(false);
-    }*/
+    }
     UGameplayStatics::OpenLevel(GetWorld(), "DemoMap");
     //UGameplayStatics::OpenLevel(GetWorld(), TEXT("World'/Game/Maps/Level1.Level1'"), TRAVEL_Absolute); 
 }
 
 void UMainMenuHUD::OnSettingsClicked()
 {
-    if(PlayerControllerRef)
-    {
-        PlayerControllerRef->SetShowMouseCursor(false);
-    }
+
     //UGameplayStatics::OpenLevel(GetWorld(), "");
 }
 
